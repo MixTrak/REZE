@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json  # Enables schema validation in editors [page:2]
+
+# General settings [page:1]
+language: "en-US"  # Review language (e.g., en-US, fr, ja) [page:1]
+tone_instructions: ""  # Custom tone (e.g., "Be concise and assertive"; max 250 chars) [page:1]
+early_access: false  # Beta features [page:1]
+free_tier_features: true  # Free plan extras [page:1]
+
+# Code reviews [page:1]
+reviews:
+  profile: "chill"  # "chill" (light) or "assertive" (detailed) [page:1]
+  request_changes_workflow: false  # Auto-approve after resolves [page:1]
+  high_level_summary: true  # PR summary [page:1]
+  high_level_summary_placeholder: "@coderabbitai summary"  # Replace in PR desc [page:1]
+  high_level_summary_in_walkthrough: false  # Summary in walkthrough [page:1]
+  release_notes: ""  # Custom release notes format [page:1]
+  auto_title_keyword: "@coderabbitai"  # Auto-title trigger [page:1]
+  auto_title_instructions: ""  # Title gen prompts [page:1]
+  review_status_messages: true  # Status in walkthrough [page:1]
+  review_details: false  # Ignored files, etc. [page:1]
+  commit_status: true  # Pending/success status [page:1]
+  commit_status_failure: false  # Failure on errors [page:1]
+  collapsible_walkthrough: true  # Markdown collapse [page:1]
+  changed_files_summary: true  # File changes in walkthrough [page:1]
+  sequence_diagrams: true  # Diagrams [page:1]
+  estimated_review_effort: true  # Effort estimate [page:1]
+  issue_addressal_assessment: true  # Issue coverage [page:1]
+  related_issues: true  # Related issues [page:1]
+  related_prs: true  # Related PRs [page:1]
+  suggested_labels: true  # Label suggestions [page:1]
+  allowed_labels: []  # Restrict labels (e.g., ["bug", "feature"]) [page:1]
+  auto_apply_labels: false  # Apply labels auto [page:1]
+  suggested_reviewers: true  # Reviewer suggestions [page:1]
+  auto_assign_reviewers: false  # Assign reviewers auto [page:1]
+  fortune_message: true  # Fun message during review [page:1]
+  poem: true  # Poem in walkthrough [page:1]
+  prompt_for_ai_agents: true  # Agent prompts in comments [page:1]
+  file_patterns: []  # Glob includes/excludes (e.g., ["src/**", "!dist/**"]) [page:1]
+  path_instructions: []  # e.g., [{"pattern": "**/*.ts", "instructions": "Prioritize security"}] [page:1]
+  abort_on_close_merge: true  # Stop review if PR closed [page:1]
+  no_cache: false  # Fresh fetch each time [page:1]
+  auto_review: {}  # Auto-review config [page:1]
+  finishing_touches: {}  # Polish config [page:1]
+  pre_merge_checks: {}  # Checks config [page:1]
+  tools: {}  # Linters (e.g., eslint) [page:1]
+
+# Chat [page:1]
+chat:
+  art: true  # ASCII/emoji art [page:1]
+  auto_reply: true  # Reply without @ [page:1]
+  integrations: {}  # External tools [page:1]
+
+# Knowledge base [page:1]
+knowledge_base:
+  opt_out: false  # Disable retention [page:1]
+  web_search: {}  # Search config [page:1]
+  code_guidelines:
+    enabled: true
+    filePatterns: ["*.md"]  # Guideline files [page:1]
+  learnings: {}  # Learnings [page:1]
+  issues: {}  # Issues [page:1]
+  jira: {}  # Jira [page:1]
+  linear: {}  # Linear [page:1]
+  pull_requests: {}  # PRs [page:1]
+  mcp: {}  # MCP [page:1]
+
+# Code generation [page:1]
+code_generation:
+  docstrings:
+    path_instructions: []  # Docstring rules [page:1]
+  unit_tests:
+    path_instructions: []  # Test rules [page:1]
+
+# Issue enrichment [page:1]
+issue_enrichment:
+  auto_enrich: {}  # Enrichment [page:1]
+  planning: {}  # Planning [page:1]
+  labeling: {}  # Labeling [page:1]
