@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Reze",
+  title: "REZE | Ai",
   description: "Personal Assistant",
   icons: {
     icon: '/logo.png',
